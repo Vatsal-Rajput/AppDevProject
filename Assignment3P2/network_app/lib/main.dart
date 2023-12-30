@@ -136,7 +136,7 @@ class _MyAppState extends State<MyApp> {
                     ElevatedButton(
                       onPressed: () {
                         setState(() {
-                          futureAlbum = createAlbum(newentry.text);
+                          var temp2 = createAlbum(newentry.text);
                         });
                       },
                       child: const Text('Post'),
@@ -150,7 +150,7 @@ class _MyAppState extends State<MyApp> {
                         trailing: ElevatedButton.icon(
                             onPressed: () {
                               setState(() {
-                                futureAlbum = deleteAlbum(album.id.toString());
+                                var temp = deleteAlbum(album.id.toString());
                               });
                             },
                             icon: Icon(Icons.delete),

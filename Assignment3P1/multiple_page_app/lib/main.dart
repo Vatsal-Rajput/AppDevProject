@@ -176,7 +176,7 @@ class SecondPage extends StatelessWidget {
                   builder: (context) {
                     return Container(
                       child: AlertDialog(
-                        title: Text('You have successfully logged out!'),
+                        title: Text('User:$Name logged out!'),
                         actions: [
                           TextButton(
                               onPressed: () {
